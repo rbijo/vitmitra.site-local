@@ -1,0 +1,78 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+.env.*
+
+# Dataset artifacts
+data/processed/
+
+# Model artifacts
+models/adapter/
+models/merged/
+
+# Training outputs
+runs/
+outputs/
+checkpoints/
+
+# Evaluation generated files
+evaluation/predictions.jsonl
+
+# Logs
+*.log
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Local base-model/cache files
+.cache/
+*.safetensors
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Python environments and generated files
+myvenv/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/dist/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Training checkpoints and temporary adapters
+models/**/checkpoint-*/
+models/**/smoke_test/
+
+# Temporary and system files
+*.log
+.DS_Store
+Thumbs.db

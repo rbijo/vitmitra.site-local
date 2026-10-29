@@ -1,0 +1,245 @@
+{
+  "evaluation_protocol": {
+    "knowledge_base": "C:\\Users\\robin\\Downloads\\00 - Academics\\01- Classes\\03- Artificial Intelligence\\vit-faq-slm\\data\\raw\\vit_cleaned_1000_qa.jsonl",
+    "test_dataset": "C:\\Users\\robin\\Downloads\\00 - Academics\\01- Classes\\03- Artificial Intelligence\\vit-faq-slm\\data\\processed\\test.jsonl",
+    "evaluation_type": "full_kb_test",
+    "knowledge_base_records": 1000,
+    "test_examples": 100,
+    "exact_query_record_excluded": true,
+    "retrieval_method": "exact question -> token overlap -> confidence threshold -> margin",
+    "threshold": 0.82,
+    "margin": 0.08
+  },
+  "metrics": {
+    "test_examples": 100,
+    "retrieval_coverage": 0.1,
+    "correct_retrieval_rate": 0.0,
+    "wrong_retrieval_rate": 0.1,
+    "abstention_rate": 0.9,
+    "precision_when_answering": 0.0
+  },
+  "counts": {
+    "correct": 0,
+    "wrong": 10,
+    "abstained": 90
+  },
+  "reasons": {
+    "score_below_threshold": 74,
+    "ambiguous_match": 16,
+    "high_confidence_fuzzy_match": 10
+  },
+  "by_category": {
+    "Academics": {
+      "total": 8,
+      "correct": 0,
+      "wrong": 0,
+      "abstained": 8,
+      "coverage": 0.0,
+      "precision_when_answering": 0.0,
+      "wrong_rate": 0.0,
+      "abstention_rate": 1.0
+    },
+    "Admissions": {
+      "total": 53,
+      "correct": 0,
+      "wrong": 6,
+      "abstained": 47,
+      "coverage": 0.11320754716981132,
+      "precision_when_answering": 0.0,
+      "wrong_rate": 0.11320754716981132,
+      "abstention_rate": 0.8867924528301887
+    },
+    "Campus Life": {
+      "total": 21,
+      "correct": 0,
+      "wrong": 3,
+      "abstained": 18,
+      "coverage": 0.14285714285714285,
+      "precision_when_answering": 0.0,
+      "wrong_rate": 0.14285714285714285,
+      "abstention_rate": 0.8571428571428571
+    },
+    "Integrated programme": {
+      "total": 1,
+      "correct": 0,
+      "wrong": 0,
+      "abstained": 1,
+      "coverage": 0.0,
+      "precision_when_answering": 0.0,
+      "wrong_rate": 0.0,
+      "abstention_rate": 1.0
+    },
+    "PG programme": {
+      "total": 4,
+      "correct": 0,
+      "wrong": 1,
+      "abstained": 3,
+      "coverage": 0.25,
+      "precision_when_answering": 0.0,
+      "wrong_rate": 0.25,
+      "abstention_rate": 0.75
+    },
+    "Research": {
+      "total": 8,
+      "correct": 0,
+      "wrong": 0,
+      "abstained": 8,
+      "coverage": 0.0,
+      "precision_when_answering": 0.0,
+      "wrong_rate": 0.0,
+      "abstention_rate": 1.0
+    },
+    "Research centre": {
+      "total": 1,
+      "correct": 0,
+      "wrong": 0,
+      "abstained": 1,
+      "coverage": 0.0,
+      "precision_when_answering": 0.0,
+      "wrong_rate": 0.0,
+      "abstention_rate": 1.0
+    },
+    "School": {
+      "total": 1,
+      "correct": 0,
+      "wrong": 0,
+      "abstained": 1,
+      "coverage": 0.0,
+      "precision_when_answering": 0.0,
+      "wrong_rate": 0.0,
+      "abstention_rate": 1.0
+    },
+    "UG programme": {
+      "total": 3,
+      "correct": 0,
+      "wrong": 0,
+      "abstained": 3,
+      "coverage": 0.0,
+      "precision_when_answering": 0.0,
+      "wrong_rate": 0.0,
+      "abstention_rate": 1.0
+    }
+  },
+  "wrong_retrieval_examples": [
+    {
+      "id": "VIT_CLEAN_0348",
+      "category": "Admissions",
+      "query": "How long is M.Tech. Computer Science and Engineering?",
+      "expected_answer": "2 years.",
+      "retrieved_id": "VIT_CLEAN_0359",
+      "retrieved_answer": "2 years.",
+      "score": 0.9,
+      "reason": "high_confidence_fuzzy_match",
+      "correct": false,
+      "wrong": true
+    },
+    {
+      "id": "VIT_CLEAN_0359",
+      "category": "Admissions",
+      "query": "How long is M.Tech. Computer Science and Engineering (Cybersecurity)?",
+      "expected_answer": "2 years.",
+      "retrieved_id": "VIT_CLEAN_0348",
+      "retrieved_answer": "2 years.",
+      "score": 0.9,
+      "reason": "high_confidence_fuzzy_match",
+      "correct": false,
+      "wrong": true
+    },
+    {
+      "id": "VIT_CLEAN_0360",
+      "category": "Admissions",
+      "query": "Which broad field does M.Tech. Computer Science and Engineering (Cybersecurity) belong to?",
+      "expected_answer": "Engineering",
+      "retrieved_id": "VIT_CLEAN_0349",
+      "retrieved_answer": "Engineering",
+      "score": 0.9230769230769231,
+      "reason": "high_confidence_fuzzy_match",
+      "correct": false,
+      "wrong": true
+    },
+    {
+      "id": "VIT_CLEAN_0361",
+      "category": "Admissions",
+      "query": "Which admission route is associated with M.Tech. Computer Science and Engineering (Cybersecurity)?",
+      "expected_answer": "VITMEE",
+      "retrieved_id": "VIT_CLEAN_0350",
+      "retrieved_answer": "VITMEE",
+      "score": 0.9230769230769231,
+      "reason": "high_confidence_fuzzy_match",
+      "correct": false,
+      "wrong": true
+    },
+    {
+      "id": "VIT_CLEAN_0362",
+      "category": "Admissions",
+      "query": "Is M.Tech. Computer Science and Engineering (Cybersecurity) listed among VIT's Vellore offerings?",
+      "expected_answer": "Yes.",
+      "retrieved_id": "VIT_CLEAN_0351",
+      "retrieved_answer": "Yes.",
+      "score": 0.9285714285714286,
+      "reason": "high_confidence_fuzzy_match",
+      "correct": false,
+      "wrong": true
+    },
+    {
+      "id": "VIT_CLEAN_0363",
+      "category": "Admissions",
+      "query": "How does VIT classify M.Tech. Computer Science and Engineering (Cybersecurity) in its programme catalogue?",
+      "expected_answer": "Engineering",
+      "retrieved_id": "VIT_CLEAN_0352",
+      "retrieved_answer": "Engineering",
+      "score": 0.9333333333333333,
+      "reason": "high_confidence_fuzzy_match",
+      "correct": false,
+      "wrong": true
+    },
+    {
+      "id": "VIT_CLEAN_0700",
+      "category": "Campus Life",
+      "query": "How many Wooden Floor Badminton Courts – Men are listed by VIT?",
+      "expected_answer": "3",
+      "retrieved_id": "VIT_CLEAN_0702",
+      "retrieved_answer": "2",
+      "score": 0.8333333333333334,
+      "reason": "high_confidence_fuzzy_match",
+      "correct": false,
+      "wrong": true
+    },
+    {
+      "id": "VIT_CLEAN_0720",
+      "category": "Campus Life",
+      "query": "What does the 'Swami Vivekananda' entry represent in VIT's hostel directory?",
+      "expected_answer": "It identifies a named hostel block in the VIT Vellore men's hostel list.",
+      "retrieved_id": "VIT_CLEAN_0722",
+      "retrieved_answer": "It identifies a named hostel block in the VIT Vellore men's hostel list.",
+      "score": 0.8571428571428571,
+      "reason": "high_confidence_fuzzy_match",
+      "correct": false,
+      "wrong": true
+    },
+    {
+      "id": "VIT_CLEAN_0726",
+      "category": "Campus Life",
+      "query": "What does the 'Nelson Mandela' entry represent in VIT's hostel directory?",
+      "expected_answer": "It identifies a named hostel block in the VIT Vellore men's hostel list.",
+      "retrieved_id": "VIT_CLEAN_0728",
+      "retrieved_answer": "It identifies a named hostel block in the VIT Vellore men's hostel list.",
+      "score": 0.8571428571428571,
+      "reason": "high_confidence_fuzzy_match",
+      "correct": false,
+      "wrong": true
+    },
+    {
+      "id": "VIT_CLEAN_0954",
+      "category": "PG programme",
+      "query": "How is M.Tech. Computer Science and Engineering (Cybersecurity) described in VIT's official catalogue?",
+      "expected_answer": "It is listed as a PG programme in VIT's official catalogue.",
+      "retrieved_id": "VIT_CLEAN_0952",
+      "retrieved_answer": "It is listed as a PG programme in VIT's official catalogue.",
+      "score": 0.9333333333333333,
+      "reason": "high_confidence_fuzzy_match",
+      "correct": false,
+      "wrong": true
+    }
+  ]
+}

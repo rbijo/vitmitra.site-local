@@ -1,0 +1,95 @@
+{
+  "model": "Qwen/Qwen3-1.7B",
+  "adapter": "C:\\Users\\robin\\Downloads\\00 - Academics\\01- Classes\\03- Artificial Intelligence\\vit-faq-slm\\models\\vit-faq-qwen3-qlora\\final_adapter",
+  "test_dataset": "C:\\Users\\robin\\Downloads\\00 - Academics\\01- Classes\\03- Artificial Intelligence\\vit-faq-slm\\data\\processed\\test.jsonl",
+  "evaluation_configuration": {
+    "max_input_length": 128,
+    "max_new_tokens": 64,
+    "do_sample": false,
+    "thinking_enabled": false,
+    "quantization": "4-bit NF4",
+    "double_quantization": true,
+    "compute_dtype": "bfloat16",
+    "seed": 42
+  },
+  "metrics": {
+    "aggregate": {
+      "test_examples": 100,
+      "exact_match": 0.7,
+      "token_precision": 0.8213030303030302,
+      "token_recall": 0.8102539682539682,
+      "token_f1": 0.812997141145748,
+      "character_similarity": 0.8511598145320056,
+      "average_latency_seconds": 0.8264803030001349,
+      "median_latency_seconds": 0.6231909000052838,
+      "p95_latency_seconds": 1.5486817999917548,
+      "average_generated_tokens": 10.52,
+      "exact_match_count": 70
+    },
+    "by_category": {
+      "Academics": {
+        "count": 8,
+        "exact_match": 0.0,
+        "token_f1": 0.1973981900452489,
+        "character_similarity": 0.35025507406746215,
+        "average_latency_seconds": 0.8947240375018737
+      },
+      "Admissions": {
+        "count": 53,
+        "exact_match": 0.8867924528301887,
+        "token_f1": 0.9415666094911378,
+        "character_similarity": 0.9563623122110476,
+        "average_latency_seconds": 0.6111476188684805
+      },
+      "Campus Life": {
+        "count": 21,
+        "exact_match": 0.6190476190476191,
+        "token_f1": 0.7301587301587302,
+        "character_similarity": 0.7831941959848937,
+        "average_latency_seconds": 1.1848471904716764
+      },
+      "Integrated programme": {
+        "count": 1,
+        "exact_match": 1.0,
+        "token_f1": 1.0,
+        "character_similarity": 1.0,
+        "average_latency_seconds": 1.2199474000080954
+      },
+      "PG programme": {
+        "count": 4,
+        "exact_match": 1.0,
+        "token_f1": 1.0,
+        "character_similarity": 1.0,
+        "average_latency_seconds": 1.1654267749981955
+      },
+      "Research": {
+        "count": 8,
+        "exact_match": 0.125,
+        "token_f1": 0.5783777625882889,
+        "character_similarity": 0.6756833311756857,
+        "average_latency_seconds": 0.7623375000039232
+      },
+      "Research centre": {
+        "count": 1,
+        "exact_match": 1.0,
+        "token_f1": 1.0,
+        "character_similarity": 1.0,
+        "average_latency_seconds": 1.1498193000152241
+      },
+      "School": {
+        "count": 1,
+        "exact_match": 0.0,
+        "token_f1": 0.8571428571428572,
+        "character_similarity": 0.7741935483870968,
+        "average_latency_seconds": 1.413859100022819
+      },
+      "UG programme": {
+        "count": 3,
+        "exact_match": 1.0,
+        "token_f1": 1.0,
+        "character_similarity": 1.0,
+        "average_latency_seconds": 1.2245300999978401
+      }
+    }
+  }
+}
